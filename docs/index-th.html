@@ -10,18 +10,16 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
-	<script>
-		function changeLanguage(language) {
+	<script>function changeLanguage(language) {
 			if (language === 'ko') {
 				window.location.href = "index.html"; // Korean version
 			} else if (language === 'en') {
 				window.location.href = "index-en.html"; // English version
 			}
-            else if (language === 'th') {
-                window.location.href = "index-th.html"; // Thai version
-            }
-		}
-	</script>
+			else if (language === 'th') {
+				window.location.href = "index-th.html"; // Thai version
+			}
+		}</script>
 </head>
 	<body class="is-preload">
 
@@ -35,10 +33,7 @@
 						<span class="image avatar48"><img src="images/11.jpg" alt="" /></span>
 						<h1 id="title">Ahn ji suk</h1>
 						<p>beginner in hello world</p>
-						<p>Please select a language:</p>
-						<button onclick="changeLanguage('ko')">한국어</button>
-						<button onclick="changeLanguage('en')">English</button>
-						<button onclick="changeLanguage('th')">ไทย</button> <!-- Thai language button -->
+						
 					</div>
 
 					<!-- Nav -->
@@ -84,6 +79,10 @@
 							<p>
 								ฉันได้เรียน Unreal Engine ด้วยตนเอง และใช้มันเพื่อสร้างสภาพแวดล้อมของเกม สร้างโมเดล 3 มิติและแอนิเมชั่นสำหรับโปรเจกต์ขนาดเล็ก จากประสบการณ์ของฉันในฐานะศิลปินที่มีผลงานยอดเยี่ยม ฉันได้พัฒนาเป็นนักออกแบบที่สร้างสรรค์
 
+							<p>Please select a language:</p>
+							<button onclick="changeLanguage('ko')">한국어</button>
+							<button onclick="changeLanguage('en')">English</button>
+							<button onclick="changeLanguage('th')">ไทย</button> <!-- Thai language button -->
 							</p>
 						</header>
 
@@ -204,7 +203,7 @@
 									"하우스룰즈 공연 영상
 									<video src="images/house.mp4"
 										   controls
-										   autoplay
+										   
 										   loop
 										   width="960px" />
 

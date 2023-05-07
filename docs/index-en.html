@@ -10,18 +10,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
-	<script>
-		function changeLanguage(language) {
-			if (language === 'ko') {
-				window.location.href = "index.html"; // Korean version
-			} else if (language === 'en') {
-				window.location.href = "index-en.html"; // English version
-			}
-            else if (language === 'th') {
-                window.location.href = "index-th.html"; // Thai version
-            }
-		}
-	</script>
+	
 </head>
 	<body class="is-preload">
 
@@ -35,10 +24,7 @@
 						<span class="image avatar48"><img src="images/11.jpg" alt="" /></span>
 						<h1 id="title">ahn jaesonsuck</h1>
 						<p>beginner in hello world</p>
-						<p>Please select a language:</p>
-						<button onclick="changeLanguage('ko')">한국어</button>
-						<button onclick="changeLanguage('en')">English</button>
-						<button onclick="changeLanguage('th')">ไทย</button> <!-- Thai language button -->
+						
 					</div>
 
 					<!-- Nav -->
@@ -74,11 +60,25 @@
 				<!-- Intro -->
 				<section id="top" class="one dark cover">
 					<div class="container">
-
+						<script>function changeLanguage(language) {
+								if (language === 'ko') {
+									window.location.href = "index.html"; // Korean version
+								} else if (language === 'en') {
+									window.location.href = "index-en.html"; // English version
+								}
+								else if (language === 'th') {
+									window.location.href = "index-th.html"; // Thai version
+								}
+							}</script>
 						<header>
 							<h2 class="alt">My name is An Jaesonsuck(Ji-suk), a creative director who works as a choreographer and media artist, mainly based in Jeju Island, South Korea.</a>.</h2>
 							<p>
 								I have self-taught myself Unreal Engine, and have used it to implement game environments, create 3D models and animations for small-scale projects. Building on my experience as a top-performing artist, I have evolved into a creative designer.
+
+							<p>Please select a language:</p>
+							<button onclick="changeLanguage('ko')">한국어</button>
+							<button onclick="changeLanguage('en')">English</button>
+							<button onclick="changeLanguage('th')">ไทย</button> <!-- Thai language button -->
 							</p>
 						</header>
 
@@ -191,7 +191,7 @@
 									"house rulez
 									<video src="images/house.mp4"
 										   controls
-										   autoplay
+										   
 										   loop
 										   width="960px" />
 
