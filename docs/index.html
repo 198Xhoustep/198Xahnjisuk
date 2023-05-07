@@ -5,12 +5,21 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>안지석이라는</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
+<head>
+	<title>안지석이라는</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<script>
+		function changeLanguage(language) {
+			if (language === 'ko') {
+				window.location.href = "index.html"; // Korean version
+			} else if (language === 'en') {
+				window.location.href = "en_ver.html"; // English version
+			}
+		}
+	</script>
+</head>
 	<body class="is-preload">
 
 		<!-- Header -->
@@ -19,11 +28,14 @@
 				<div class="top">
 
 					<!-- Logo -->
-						<div id="logo">
-							<span class="image avatar48"><img src="images/11.jpg" alt="" /></span>
-							<h1 id="title">안지석</h1>
-							<p>beginner in hello world</p>
-						</div>
+					<div id="logo">
+						<span class="image avatar48"><img src="images/11.jpg" alt="" /></span>
+						<h1 id="title">안지석</h1>
+						<p>beginner in hello world</p>
+						<p>Please select a language:</p>
+						<button onclick="changeLanguage('ko')">한국어</button>
+						<button onclick="changeLanguage('en')">English</button>
+					</div>
 
 					<!-- Nav -->
 						<nav id="nav">
